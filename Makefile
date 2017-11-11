@@ -9,7 +9,7 @@ all: $(TARGET)
 clean:
 	rm -f $(OBJS) $(TARGET)
 
-crc32 : $(OBJS)
+$(TARGET) : $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
 .c.o:
